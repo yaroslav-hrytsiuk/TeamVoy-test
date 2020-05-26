@@ -1,0 +1,80 @@
+.card {
+    max-width: calc(100%/3 - 4px - 20px);
+    width: 100%;
+    border: 2px solid #ababab;
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    .img-container {
+        width: 80%;
+        img {
+            width: 100%;
+        }
+    }
+    .pok-name {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .pok-types {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .type {
+            margin: 5px;
+            width: calc(50% - 22px);
+            padding: 5px;
+            border: 1px solid #ababab;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(#f1f1f1, #b4c080);
+            text-align: center;
+        }
+        .poison {
+            background: linear-gradient(#f1f1f1, #9846c7);
+        }
+        .grass {
+            background: linear-gradient(#f1f1f1, #1adf34);
+        }
+        .fire {
+            background: linear-gradient(#f1f1f1, #e21111);
+        }
+        .water {
+            background: linear-gradient(#f1f1f1, #1a3bf3);
+        }
+        .bug {
+            background: linear-gradient(#f1f1f1, #dba716);
+        }
+        .flying {
+            background: linear-gradient(#f1f1f1, #17e7dd);
+        }
+        .electric {
+            background: linear-gradient(#f1f1f1, #dae905);
+        }
+        .fairy {
+            background: linear-gradient(#f1f1f1, #f43dfa);
+        }
+        .ground {
+            background: linear-gradient(#f1f1f1, #9e552a);
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .card {
+        max-width: calc(100%/2 - 4px - 20px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        max-width: calc(100% - 4px - 20px);
+    }
+}
+

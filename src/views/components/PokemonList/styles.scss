@@ -1,0 +1,24 @@
+.pokemon-list {
+    width: 66%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.load-more-btn {
+    width: 100%;
+    margin: 10px;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: 600;
+    background: linear-gradient(#21d3da, #0881f1);
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        background: linear-gradient(#0881f1, #21d3da);
+    }
+}
